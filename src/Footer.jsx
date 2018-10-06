@@ -32,7 +32,7 @@ class Time extends Component {
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <div className="content has-text-centered">
         <p>
           &copy; 2018
