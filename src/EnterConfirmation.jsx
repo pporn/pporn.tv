@@ -30,7 +30,7 @@ class EnterConfirmation extends Component {
           <div className="column">
             <a
               className="button is-primary is-large"
-              href="https://hackertyper.net"
+              href="https://www.youtube.com"
             >
               I am over 18 years old
             </a>
