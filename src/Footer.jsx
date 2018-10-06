@@ -45,8 +45,10 @@ function Footer() {
           {' and '}
           <a href="https://nodejs.org">Node.js</a>
           {'. '}
-          <Time />
         </p>
+      </div>
+      <div className="content has-text-centered">
+        <Time />
       </div>
     </footer>
   );
