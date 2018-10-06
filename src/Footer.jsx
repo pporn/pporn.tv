@@ -1,4 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+class Time extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      date: new Date(),
+    };
+  }
+
+  componentDidMount() {
+    this.intervalId = setInterval(() => {
+      this.setState({ date: new Date() });
+    }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
+  render() {
+    const { date } = this.state;
+
+    return (
+      <time>
+        {date.toLocaleTimeString()}
+      </time>
+    );
+  }
+}
 
 function Footer() {
   return (
@@ -14,6 +44,8 @@ function Footer() {
           <a href="https://reactjs.org">React</a>
           {' and '}
           <a href="https://nodejs.org">Node.js</a>
+          {'. '}
+          <Time />
         </p>
       </div>
     </footer>
