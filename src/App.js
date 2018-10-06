@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/bulma.min.css';
+
+/*
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://pporn.tv">PPORN.TV</a>
+            </div>
+        </nav>
+*/
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div>
+       <nav className="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+              <a class="navbar-item" href="https://pporn.tv">PPORN.TV</a>
+          </div>
+        </nav>
+        <section class="section">
+          <div class="container has-text-centered">
+            <p class="title is-unselectable is-2">Welcome to PPORN.TV</p>
+            <p class="subtitle is-unselectable is-2">With ❤️</p>
+          </div>
+        </section>
+       </div>
     );
   }
 }
