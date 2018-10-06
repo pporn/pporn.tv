@@ -6,7 +6,7 @@ function WelcomeHeader() {
   return (
     <section className="section">
       <div className="container has-text-centered">
-        <p className="title is-unselectable is-2">Welcome to PPORN.TV</p>
+        <p className="title is-unselectable is-2">Welcome to PPornTV</p>
         <p className="subtitle is-unselectable is-2">
           With
           <span role="img" aria-label="heart"> ❤️</span>
